@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polígonos de Monitoreo · CVP Reasentamientos</title>
+  </head>
+  <body>
+    <div id="app">
+      <header id="topbar">
+        <div class="brand">
+          <span class="brand-mark">CVP</span>
+          <div class="brand-text">
+            <h1>Polígonos de Monitoreo</h1>
+            <p>Dirección de Reasentamientos · Caja de la Vivienda Popular</p>
+          </div>
+        </div>
+        <div class="controls">
+          <label for="filtro">Polígono de monitoreo</label>
+          <select id="filtro" aria-label="Filtrar por polígono de monitoreo">
+            <option value="__all__">Todos los polígonos</option>
+          </select>
+          <button id="reset" type="button" title="Restablecer vista">Restablecer</button>
+        </div>
+        <div id="stats" class="stats"></div>
+      </header>
+      <main id="map" role="application" aria-label="Mapa de polígonos y puntos de monitoreo"></main>
+      <footer id="footer">
+        CVP · Dirección de Reasentamientos · Caja de la Vivienda Popular · Bogotá D.C. · 2026
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
